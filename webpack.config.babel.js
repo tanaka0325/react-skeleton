@@ -1,8 +1,8 @@
-import path from 'path';
+import path from 'path'
 
 module.exports = [
   {
-    entry: path.join(__dirname, 'src', 'index.jsx'),
+    entry: path.join(__dirname, 'src', 'index.js'),
     output: {
       path: path.join('dest'),
       filename: 'bundle.js',
@@ -11,7 +11,7 @@ module.exports = [
     module: {
       loaders: [
         {
-          test: /\.jsx?$/,
+          test: /\.js$/,
           exclude: /node_modules/,
           loader: 'babel-loader',
         },
@@ -21,4 +21,4 @@ module.exports = [
       extensions: ['', '.js', '.jsx'],
     },
   },
-];
+]
