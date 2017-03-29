@@ -7,9 +7,9 @@
     "type": "git"
   },
   "scripts": {
-    "mv:index": "cp -f ./src/index.html dest/",
-    "pack": "npm run mv:index && webpack",
-    "dev": "npm run mv:index && webpack-dev-server --content-base dest/"
+    "clean": "rm -rf build/* && touch build/.keep",
+    "build": "webpack -p && cp -r src/images build/images",
+    "start": "webpack-dev-server --content-base build/ --port 8765"
   },
   "author": "Hiroyuki Tanaka <h.tanaka.0325@gmail.com>",
   "license": "MIT",
