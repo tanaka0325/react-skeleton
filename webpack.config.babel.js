@@ -55,7 +55,7 @@ module.exports = [
         {
           test: /\.sass$/,
           exclude: /node_modules/,
-          use: ExtractTextPlugin.extract(['css-loader', 'sass-loader']),
+          use: ExtractTextPlugin.extract(['css-loader', 'sass-loader', 'import-glob-loader']),
         },
         {
           test: /\.(jpg|png)$/,
