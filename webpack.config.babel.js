@@ -1,5 +1,5 @@
-import path from 'path'
-import ExtractTextPlugin from 'extract-text-webpack-plugin'
+import path from 'path';
+import ExtractTextPlugin from 'extract-text-webpack-plugin';
 
 module.exports = [
   {
@@ -35,7 +35,7 @@ module.exports = [
         {
           test: /\.html$/,
           exclude: /node_modules/,
-          use: ExtractTextPlugin.extract('raw-loader')
+          use: ExtractTextPlugin.extract('raw-loader'),
         },
       ],
     },
@@ -68,4 +68,4 @@ module.exports = [
       new ExtractTextPlugin('style.css'),
     ],
   },
-]
+];
