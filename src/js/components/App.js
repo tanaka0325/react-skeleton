@@ -1,19 +1,18 @@
 // @flow
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
 type Props = {
   name: string
 }
 
 class App extends Component {
-  constructor(props: Props) {
-    super(props)
-  }
-  render() {
+  props: Props
+
+  render () {
     return (
       <div>hello App Component!!!! {this.props.name}</div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
